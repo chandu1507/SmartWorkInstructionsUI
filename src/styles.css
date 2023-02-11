@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+body
+    {
+        min-width: 992px !important;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .navbar {
+        display: none
+    }
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.mb-5, .my-5 {
+    margin-bottom: 0.2px !important;
+}
+.logo-size {
+    height: 36px;
+}
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-family: Verdana, sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link2 {
+    color: white;
+}
+.navbar-dark .navbar-text {
+    color: #dee2e6;
+}
+.navbar-dark .navbar-text {
+    color: #ffffff;
+}
+.navbar-dark .nnavbar-text {
+    color: #ffffff;
+}
+.container {
+    width: 100%;
+    min-height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 125px ;
+    margin-right: auto;
+    margin-left: auto
+}
+.main-wrapper {
+    width: 100%;
+    padding: 0 0 0 0;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 16px;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.fixed-bottom {
+    z-index: 999 !important;
+}
+.navbar-default {
+    background-color: #ea901afa !important;
+}
+@media only screen and (max-width:1199px) {
+
+    .container {
+        width: 96%;
+        padding-top: 150px !important;
+    }
+}
+.headerh6 {
+    font-size: larger;
+    color: #495057
+}
