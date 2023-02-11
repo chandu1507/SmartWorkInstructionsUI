@@ -18,6 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTableModule} from '@angular/material/table';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import {MatIconModule} from '@angular/material/icon';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { HeaderComponent } from './root/header/header.component';
@@ -40,6 +41,7 @@ import { CreateInstructionComponent } from './Instructions/create-instruction/cr
     MatFormFieldModule,
     MatCardModule,
     MatInputModule,
+    MatIconModule,
     MatTableModule,
     MatDatepickerModule,
     MatNativeDateModule,
