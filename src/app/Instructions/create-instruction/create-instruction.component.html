@@ -33,10 +33,11 @@
               </mat-datepicker-actions>
             </mat-datepicker>
           </mat-form-field>
-          <mat-form-field>
-            <mat-label>Image</mat-label>
-            <input matInput formControlName="image" />
-          </mat-form-field>
+          
+            <mat-icon>library_add</mat-icon>
+  <span>Select Image</span>
+  <input #fileInput type="file"  style="display:none;" />
+          
           
         </form>
       </mat-card-content>

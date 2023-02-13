@@ -12,7 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
 
 
 export class HomePageComponent implements OnInit {
-  displayedColumns: string[] = ['Title', 'Description', 'Progress','CreatedDate','StartDate','EndDate','Image'];
+  displayedColumns: string[] = ['Title', 'Description', 'Progress','CreatedDate','StartDate','EndDate','Image','Actions'];
   Instructions:IInstructions[]=[];
   constructor(private instructionsService:InstructionsService) { }
 
