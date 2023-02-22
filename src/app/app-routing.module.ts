@@ -9,8 +9,8 @@ import { CreateInstructionComponent } from './Instructions/create-instruction/cr
 
 const routes: Routes = [
  { path: '',
- component: SecretComponent,
- canActivate: [AuthGuard],
+ component: LoginPageComponent,
+ //canActivate: [AuthGuard],
 },
 {
   path: 'login',
@@ -23,10 +23,12 @@ const routes: Routes = [
 {
   path: 'home',
   component: HomePageComponent,
+  canActivate: [AuthGuard]
 },
 {
   path: 'instructions/create',
   component: CreateInstructionComponent,
+  canActivate: [AuthGuard]
 },
 ];
 

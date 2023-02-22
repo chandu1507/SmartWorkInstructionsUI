@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {IInstructions} from 'src/app/Models/IInstructions';
 import { InstructionsService } from '../services/instructions.service';
 import { MatTableDataSource } from '@angular/material/table';
-
+import { Router, ActivatedRoute, Params } from '@angular/router';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -14,7 +14,7 @@ import { MatTableDataSource } from '@angular/material/table';
 export class HomePageComponent implements OnInit {
   displayedColumns: string[] = ['Title', 'Description', 'Progress','CreatedDate','StartDate','EndDate','Image','Actions'];
   Instructions:IInstructions[]=[];
-  constructor(private instructionsService:InstructionsService) { }
+  constructor(private instructionsService:InstructionsService,private router: Router) { }
 
   ngOnInit(): void {
     this.instructionsService.getData().subscribe((data: any) => {
@@ -25,5 +25,10 @@ export class HomePageComponent implements OnInit {
   
    )
   }
-
+  OpenInstructions(){
+    this.router.navigate(['instructions/create']);
+  }
+  public onSubmit() {
+   
+  }
 }
